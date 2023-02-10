@@ -7,7 +7,7 @@ OWNER_ID = 1744065403
 USER_LIST = []
 
 # Initialize bot and dispatcher
-bot = Bot(token='6192057464:AAFbZ4_5JuIICXG40Fp4sDGLlNq8qWvErpw')
+bot = Bot(token='6274173401:AAFxwm7Egd_E7lL6qpbEXgycN5mV5shMxS0')
 dp = Dispatcher(bot)
 
 # First inline button

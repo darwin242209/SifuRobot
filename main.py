@@ -8,7 +8,7 @@ CHANNEL_ID = []
 OWNER_ID = 1744065403
 USER_LIST = []
 
-lock_file = "/opt/render/project"
+lock_file = 'lock_file.lock'
 fp = open(lock_file, "w")
 try:
     fcntl.flock(fp, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -83,4 +83,5 @@ async def cmd_start(message: Message):
 
 if __name__ == '__main__':
     print("+ Bot Online Now")
+    print(os.path.abspath(__file__))
     executor.start_polling(dp)

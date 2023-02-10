@@ -7,15 +7,6 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 CHANNEL_ID = []
 OWNER_ID = 1744065403
 USER_LIST = []
-
-lock_file = 'lock_file.lock'
-fp = open(lock_file, "w")
-try:
-    fcntl.flock(fp, fcntl.LOCK_EX | fcntl.LOCK_NB)
-except IOError:
-    # another instance is running
-    print("Another instance is already running. Exiting.")
-    exit(1)
     
 # Initialize bot and dispatcher
 bot = Bot(token='6274173401:AAFxwm7Egd_E7lL6qpbEXgycN5mV5shMxS0')

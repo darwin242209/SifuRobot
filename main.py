@@ -1,8 +1,12 @@
 #import
+import flock
 import sqlite3
 from aiogram.types import Message
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
+
+lockfile = "Devs/bot.lock"
+with flock.Flock(lockfile):
 
 #Bot data
 OWNER_ID = 1744065403
@@ -10,7 +14,6 @@ OWNER_ID = 1744065403
 # Initialize bot
 bot = Bot(token='6274173401:AAGJsW474z1XNzUJXG4malvFkUo-pxigSMA')
 dp = Dispatcher(bot)
-
 # ------------------<Database Management>------------------
 #Connect Database
 conn = sqlite3.connect('BotDatabase.db')

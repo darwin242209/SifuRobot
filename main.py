@@ -8,7 +8,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
 OWNER_ID = 1744065403
 
 # Initialize bot
-bot = Bot(token='6274173401:AAE96B-zdfhcVNh7PgTX2D2AH21wo1QMkec')
+bot = Bot(token='6274173401:AAHujThy29ZyqI1FOvnFKVYeJ4T8QwtXcfQ')
 dp = Dispatcher(bot)
 
 # ------------------<Database Management>------------------
